@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color:rgba(238, 238, 238, 1)
+ }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+h2{
+    color: white; 
+    padding-left: .4em;
+  }
+
+  /* icono de usuario */
+header i {
+  color: black;
+  font-size: 1.7em;
+}
+
+.iconos{
+  display: flex;
+  gap: 2em;
+  align-items: flex-end;
+    margin-right: 2rem;
+}
+.iconos a {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.07em;
+  color: white;
+}
+
+  form {
+    width: 30%;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #8D99AE;
+  }
+
+input {
+    border: none;
+    color: white;
+    margin: .8em;
+    padding: .7em;
+    font-size: .9em;
+    width: 87%;
+    background-color: rgba(196, 196, 196, 0.991); 
+}
+
+   input::placeholder {
+    color: white; 
+    font-weight: bold;
+   }
+
+#coment{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #8D99AE;
+}
+
+#texto_comentario {
+    border: none;
+    color: white;
+    margin: .8em;
+    padding: .7em;
+    font-size: .9em;
+    width: 100%;
+    background-color: rgba(196, 196, 196, 0.991);
+}
+
+#texto_comentario::placeholder {
+    color: white;
+    font-weight: bold;
+}
+
+
+.boton-entrar{
+    margin-top: .7em;
+    text-align: center;
+  }
+
+.bt {
+    padding: 0.5em;
+    font-size: 1.2em;
+    border: none;
+    color: rgb(0, 0, 0);
+    width: 40%;
+  }
+  .bt:hover{
+    background-color: rgb(225, 225, 2);
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+.bt1{
+    padding: 0.5em;
+    font-size: 1.2em;
+    border: none;
+    color: rgb(0, 0, 0);
+    width: 70%;
+}
+.bt1:hover{
+    background-color: rgb(225, 225, 2);
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+
+/* div caja */
+.caja{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.ter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    margin: 1em;
+}
+
+.ter a {
+    text-decoration: none;
+    color: white;
+}

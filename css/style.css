@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .8rem;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+/************** navegador de header ***************/
+nav {
+  display: flex;
+  gap: 15em;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+nav a {
+  color: white;
+}
+
+/************* icono de usuario ***********/
+.iconos a {
+  color: white;
+  margin-right: 2rem;
+  font-size: 1.1em;
+}
+
+/************* inicio imagen **************/
+.inicio {
+  padding: 2rem;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/karma/img/f4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/************* hover nav **************/
+nav .ini:hover,
+nav .descubre:hover,#open:hover,
+.btn1:hover {
+  transition: all .2s ease-in-out;
+  font-weight: bolder;
+  transform: scale(1.2);
+}
+
+/************* Pop Up contacto **************/
+.modal-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.9s ease;
+  color: black;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  background-color: #fff;
+  width: 600px;
+  max-width: 100%;
+  padding: 1.5em;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal h1 {
+  margin: 0;
+  text-transform: uppercase;
+  padding-bottom: .5em;
+}
+
+.modal p {
+  opacity: 1;
+  font-size: 1.2em;
+  padding-bottom: .5em;
+}
+.modal a {
+  color: #000000;
+}
+
+#btn-cerrar {
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  background: rgb(225, 225, 2);
+  padding: 0.5em ;
+  border-radius: 5px;
+  border: 2px solid white;
+  display: inline-block;
+  margin-top: .5em;
+  cursor: pointer;
+}
+
+.fila-acceso i{
+  margin-right: .5em;
+}
+
+/************** fondo de la pagina *************/
+main {
+  background-color: rgba(238, 238, 238, 1)
+}
+
+/************** boton a descubrir **************/
+.botonInicio {
+  padding: .5em;
+  background-color: white;
+  border-radius: 1em;
+}
+.botonInicio:hover {
+  transition: all .2s ease-in-out;
+  font-weight: bolder;
+  transform: scale(1.2);
+  box-shadow: .3em .3em rgb(54, 54, 54);
+}
+
+/************ texto inicio ***************/
+.eslogan {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.textoInicio {
+  font-size: 1.5em;
+}
+
+/************ boton descubrir *************/
+.bt {
+  margin-top: 3em;
+}
+
+.bt a {
+  font-size: 1.1em;
+  color: black;
+}
+
+/************ h2 ************/
+.titulos {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+/******* seccion de discoteca, bares y locales *********/
+section {
+  /* background-color: aqua; */
+  height: 30vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  /* padding: 2em; */
+}
+
+section img{
+  width: 70vh;
+  height: 30vh;
+}
+
+section h3{
+  text-align: center;
+}
+section h3:hover{
+  transition: all .2s ease-in-out;
+  font-weight: bolder;
+  transform: scale(1.2);
+}
+
+
+/********* seccion de planes *********/
+.plan {
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+
+.plan-uno, .plan-dos{
+  padding: 2em;
+  text-align: justify;
+}
+
+.secciones {
+  padding-top: 5rem;
+}
+
+.plan-uno,.plan-dos{
+  height: 10vh;
+  background-color: blue;
+}
+
+/************ imagenes de fondo de las secciones **********/
+.ico{
+  color: yellow;
+}
+
+/*mostrar-info de filtro precio*/
+.mostrar-info{
+  padding: 2em;
+}
+strong{
+  font-size: 1.2em;
+}
+article a{
+  color: black;
+}
+
+/************* footer **************/
+footer {
+  background-color: rgb(114, 114, 114);
+  color: white;
+  padding: 1rem;
+}
+.iconos2 i {
+  font-size: 1.1em;
+  padding-top: .4em;
+  padding-left: .4em;
+}
+.iconos2 a{
+  color: white;
+}
+
+.contenedor{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center; 
+}
+div .con {
+  padding-top: 1em;
+  text-align: center;
+}
+.descubre-opciones p{
+  padding-top: .4em;
+  font-size: 1.1em;
+}
+.descubre-opciones{
+  padding-bottom: .7em;
+}
+.terminos {
+  font-size: 1em;
+  padding-top: .7em;
+}
+.descubre-opciones p:hover,.iconos2 i:hover{
+  transform: scale(1.1);
+}
